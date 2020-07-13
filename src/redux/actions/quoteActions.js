@@ -10,7 +10,7 @@ export const getAllItem = () => {
 		.get(`${apiUrl}`)
 		.then((response) => {
 			console.log(response)
-				dispatch(getItemSuccess(response.data.data))
+				dispatch(getItemSuccess(response.data.quote))
 		})
 		.catch((error) => {
 			console.log(error);
